@@ -52,7 +52,7 @@ zonann_temps %>%
     title = "We are doomed",
     subtitle = "Global mean annual temperature deviation from reference period (1951-1980)"
   ) +
-  theme_strip +
+  theme_strip #+
   transition_time(Year) +
   shadow_mark() +
   enter_grow() +
@@ -67,7 +67,7 @@ zonann_temps %>%
   scale_fill_gradient2(
     low = "#26456E",
     high = "#9C0824",
-    breaks = c(-1, 0, 1), limits = c(-1, 1),
+    breaks = c(-1, 0, 1), limits = c(-1.2, 1.2),
   ) +
   scale_x_continuous(breaks = seq(1880, 2020, by = 20)) +
   annotate(
